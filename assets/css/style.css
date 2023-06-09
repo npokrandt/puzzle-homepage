@@ -1,0 +1,114 @@
+body {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(rgb(18, 165, 18), rgb(1, 70, 1));
+}
+
+header {
+    background: rgb(65, 204, 65);
+    padding: 15px;
+    font-weight: bold;
+}
+
+nav {
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+nav a{
+    font-size: 120%;
+    margin: 30px 30px 0 0;
+    cursor: pointer;
+}
+
+nav a::before, nav a::after{
+    content: '\2013';
+}
+
+
+h1 {
+    font-size: 270%;
+}
+
+main {
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+footer {
+    position: absolute; 
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+section img{
+    width: 150px;
+    border: 2px dashed white;
+    box-shadow: 8px 7px 10px black;
+}
+
+section img:hover {
+    width: 170px;
+    margin: -10px -10px 0 -10px;
+}
+
+section p{
+    font-size: 110%;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* TODO: figure out the gradient and footer issue */
+/* Header gets crowded; boxes need rearrangement*/
+
+/* tablets */
+@media (max-width: 900px) {
+    header {
+        padding-bottom: 25px;
+    }
+
+    nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+}
+@media (max-width: 800px) {
+
+    main {
+        padding-top: 550px;
+        padding-bottom: 550px;
+    }
+}
+
+/* smartphones */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    header {
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+
+    nav a {
+        font-size: 110%;
+    }
+    main {
+        padding-top: 550px;
+        padding-bottom: 550px;
+    }
+}
